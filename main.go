@@ -19,6 +19,9 @@ func main() {
 	displayResultSort(unsorted, sortedSelectionSort, nbIterationSelectionSort)
 
 	fmt.Println("-----Insertion Sort-----")
+	sortedInsertionSort, nbIterationInsertionSort := selectionSort(unsorted)
+	displayResultSort(unsorted, sortedInsertionSort, nbIterationInsertionSort)
+
 }
 
 func displayResultSort(unsorted []int, sorted []int, numberOfIteration int) {
